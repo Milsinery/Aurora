@@ -145,7 +145,7 @@
     transition: all 0.15s ease-in;
 }
 
-@media (min-width: 320px) and (max-width:400px) {
+@media (min-width: 320px) and (max-width:480px) {
     .menu {
         display:none;
     }
