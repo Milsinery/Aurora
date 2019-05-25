@@ -1,0 +1,128 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    padding: 8px 16px 8px 16px;
+}
+
+.logotype {
+    height: 32px;
+    width: 80px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.link-cabinet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.link-cabinet__icon {
+
+}
+
+.link-cabinet__title {
+    font-weight: 400px;
+    color: white;
+}
+
+.max-width-wrapper {
+    position: fixed;
+    top: 48px;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: flex-start;
+    background-color: rgba(202, 202, 202, 0.473);
+    border-top-left-radius: 8px;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    flex-basis: auto;
+    height: 100vh;
+    width: 48px;
+    box-sizing: border-box;
+    padding: 8px 0px 0px 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu:hover {
+    width: 200px;
+    transition: width 0.15s ease-in-out;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    cursor: pointer;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    transition: background-color 0.15s ease-in;
+}
+
+.menu__item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    transition: background-color 0.15s ease-in;
+}
+
+.menu__item_active {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    cursor: auto;
+}
+
+.menu__icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.menu__title {
+    font-weight: 400;
+    color: white;
+    flex-shrink: 0;
+}
+
+.content {
+    height: 100vh;
+    width: 100%;
+    padding: 16px 24px 120px 16px;
+    background-color: white;
+    border-top-right-radius: 4px;
+}
