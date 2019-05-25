@@ -133,13 +133,31 @@
     border-top-right-radius: 4px;
 }
 
+.menu_mobile {
+    content: "";
+    position: fixed;
+    bottom: -48px;
+    left: 0px;
+    right: 0px;
+    height: 48px;
+    background-color: rgb(190, 144, 144);
+    visibility: hidden;
+    transition: all 0.15s ease-in;
+}
+
 @media (min-width: 320px) and (max-width:400px) {
     .menu {
         display:none;
     }
+
+    .menu_mobile {
+        visibility: visible;
+        bottom: 0px;
+        transition: all 0.15s ease-in;
+    }
 }
 
-@media (min-width: 900px){
+@media (min-width: 1200px){
     .menu {
         width: 200px;
     }
