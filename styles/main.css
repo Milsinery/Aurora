@@ -1,49 +1,20 @@
-/* Сброс и общие стили */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Временные стили */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(244, 61%, 30%);
+html {
+    height: 100%;
+    width: 100%;
 }
 
-.icon {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    background-color: white;
+body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(68, 68, 139);
 }
 
 h1 {
     font-size: 24px;
-    font-weight: 400px;
-}
-
-/* Горизонтальный отступ после элемента */
-.mrg-x-8 {
-    margin-right: 8px;
-}
-
-.mrg-x-16 {
-    margin-right: 16px;
-}
-
-.mrg-x-24 {
-    margin-right: 24px;
-}
-
-/* Вертикальный отступ после элемента */
-.mrg-y-8 {
-    margin-bottom: 8px;
-}
-
-.mrg-y-16 {
-    margin-bottom: 16px;
-}
-
-.mrg-y-24 {
-    margin-bottom: 24px;
+    font-weight: 400;
 }
