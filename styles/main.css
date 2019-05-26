@@ -9,12 +9,22 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --webkit-font-smoothing: antialised;
     background-color: rgb(68, 68, 139);
 }
 
 h1 {
     font-size: 24px;
     font-weight: 400;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
 }
