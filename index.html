@@ -6,7 +6,6 @@
     <title>Aurora — test project</title>
     <meta charset="utf-8">
     <meta name="description" content="Test project for lessons of codding">
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, min-width=320px">
     <link href="/styles/main.css" rel="stylesheet">
     <link href="/styles/index.css" rel="stylesheet">
     <script async src="/scripts/index.js"></script>
@@ -83,6 +82,18 @@
                     флоатов, инлайн-блоков и&nbsp;табличных свойств, можно применять хитрое позиционирование. Сам много лет
                     это имитировал и&nbsp;набил руку на&nbsp;хаках и&nbsp;трюках. Но&nbsp;по-настоящему просто и&nbsp;явно
                     это делает только флекс.
+                </p>
+                <p>
+                    Что это вообще такое? Флекс&nbsp;&mdash; это такой контекст форматирования: вы&nbsp;задаёте родителю
+                    display: flex и&nbsp;его дети начинают подозрительно хорошо себя вести. Ещё есть старинный контекст
+                    display: table, когда блоки прикидываются внутренностями таблицы, и&nbsp;совсем новый&nbsp;&mdash; грид,
+                    ещё круче флекса. Гриды и&nbsp;флексы имеют кое-что общее и&nbsp;очень ценное.
+                </p>
+                <p>
+                    Мало раскидать резиновые блоки, это можно сделать хоть на&nbsp;флоатах. Нужно ещё сказать, где они
+                    начинаются по&nbsp;главной оси, как делят пустое место внутри родителя и&nbsp;как выравниваются поперёк
+                    оси&nbsp;&mdash; во&nbsp;флексах ведь можно менять её&nbsp;направление. Этими вопросами занимается
+                    отдельная спецификация Box Alignment.
                 </p>
                 <p>
                     Что это вообще такое? Флекс&nbsp;&mdash; это такой контекст форматирования: вы&nbsp;задаёте родителю

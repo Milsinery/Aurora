@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     --webkit-font-smoothing: antialised;
     background-color: rgb(68, 68, 139);

@@ -122,8 +122,10 @@
 
 .content {
     box-sizing: border-box;
-    padding: 16px 24px 0px 16px;
+    padding: 16px 16px 120px 16px;
     flex-grow: 1;
+    height: 100%;
+    overflow: auto;
     background-color: white;
 }
 
@@ -163,7 +165,6 @@
 }
 
 .sidebar {
-    content: "";
     height: 100%;
     width: 320px;
     border-left: 1px solid #cccccc;
@@ -171,6 +172,7 @@
     border-top-right-radius: 8px;
     flex-shrink: 0;
     padding: 16px;
+    overflow: auto;
 }
 
 @media (max-width: 1024px) {
