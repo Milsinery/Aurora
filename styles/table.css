@@ -1,0 +1,43 @@
+.table {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.table__row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #cccccc;
+}
+
+.table__row:hover {
+    background-color: rgb(198, 228, 228);
+    border-radius: 4px;
+}
+
+.table__cell {
+    height: 40px;
+    margin-right: 8px;
+}
+
+.table__cell_icon {
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.table__cell_icon .icon{
+    background-color: #cccccc;
+}
+
+.table__cell_text {
+    box-sizing: border-box;
+    padding-top: 12px;
+    min-width: 128px;
+    max-width: 160px;
+    font-size: 12px;
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
