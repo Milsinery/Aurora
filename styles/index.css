@@ -1,5 +1,4 @@
 /* Global variable */
-
 :root {
     /* Colors */
     --color-snow: white;
@@ -11,7 +10,6 @@
 
 
 /* Base styles */
-
 * {
     margin: 0;
     padding: 0;
@@ -33,20 +31,34 @@ body {
     overflow: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 8px;
+}
+
+h1 {
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 p {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 8px;
 }
 
 /* Components */
-
 .icon {
     background-color: var(--color-snow);
     border-radius: 50%;
@@ -275,7 +287,12 @@ p {
 .table {
     display: flex;
     flex-direction: column;
-    
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .table__row {
@@ -330,7 +347,6 @@ p {
     position: sticky;
     position: -webkit-sticky;
     padding: 8px 8px 0 0;
-    width: fit-content;
 }
 
 .pagination__page {
