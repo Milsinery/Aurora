@@ -1,4 +1,16 @@
-/* Базовые стили */
+/* Global variable */
+
+:root {
+    /* Colors */
+    --color-snow: white;
+    --color-graphite: #474747;
+    --color-cloud: #cccccc;
+    --color-water: #cfe4fa;
+    --color-sky: #4180c0;
+}
+
+
+/* Base styles */
 
 * {
     margin: 0;
@@ -12,6 +24,7 @@ html {
 
 body {
     background-color: rgb(68, 68, 139);
+    color: var(--color-graphite);
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,10 +45,10 @@ p {
     margin-bottom: 8px;
 }
 
-/* Общие элементы */
+/* Components */
 
 .icon {
-    background-color: white;
+    background-color: var(--color-snow);
     border-radius: 50%;
     height: 32px;
     width: 32px;
@@ -146,7 +159,7 @@ p {
 
 .menu__title {
     font-weight: 400;
-    color: white;
+    color: var(--color-snow);
     flex-shrink: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -154,7 +167,7 @@ p {
 }
 
 .content {
-    background-color: white;
+    background-color: var(--color-snow);
     box-sizing: border-box;
     flex-grow: 1;
     height: 100%;
@@ -169,14 +182,18 @@ p {
 }
 
 .nav__item {
-    color: rgb(94, 94, 94);
-    cursor: pointer;
+    color: var(--color-cloud);
     font-weight: 500;
     margin-right: 16px;
 }
 
+.nav__item:hover {
+    color: var(--color-sky);
+    cursor: pointer;
+}
+
 .nav__item_active {
-    color: rgb(49, 110, 180);
+    color: var(--color-sky);
     cursor: auto;
 }
 
@@ -190,7 +207,7 @@ p {
 }
 
 .menu_mobile {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-snow);
     box-shadow: -2px 0px 16px rgba(0, 0, 0, .178);
     bottom: -48px;
     content: "";
@@ -204,8 +221,8 @@ p {
 }
 
 .sidebar {
-    background-color: rgb(255, 255, 255);
-    border-left: 1px solid #cccccc;
+    background-color: var(--color-snow);
+    border-left: 1px solid var(--color-cloud);
     border-top-right-radius: 8px;
     flex-shrink: 0;
     height: 100%;
@@ -287,7 +304,7 @@ p {
 }
 
 .pagination {
-    background-color: aqua;
+    background-color: var(--color-snow);
     bottom: 0;
     box-sizing: border-box;
     flex-direction: row;
@@ -296,15 +313,16 @@ p {
     left: 0;
     justify-items: flex-start;
     margin-bottom: 24px;
-    margin-top: 16px;
+    margin-top: 8px;
     overflow: auto;
     position: sticky;
     position: -webkit-sticky;
-    padding: 8px;
+    padding: 8px 8px 0 0;
+    width: fit-content;
 }
 
 .pagination__page {
-    background: white;
+    background: var(--color-snow);
     border: 1px solid #cccccc;
     box-sizing: border-box;
     color: #878787;
@@ -317,7 +335,7 @@ p {
 }
 
 .pagination__page:hover {
-    background-color: rgb(223, 223, 223);
+    background-color: var(--color-water);
     cursor: pointer;
 }
 
@@ -330,5 +348,5 @@ p {
 }
 
 .pagination__page_active {
-    background-color: rgb(223, 223, 223);
+    background-color: var(--color-water);
 }
