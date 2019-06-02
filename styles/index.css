@@ -66,11 +66,11 @@ p {
     width: 100%;
 }
 
-.win-logotype {
+.logotype {
     content: url(/files/logo-windows.svg);
 }
 
-.header__win-logotype {
+.header__logotype {
     margin-right: 16px;
 }
 
@@ -175,16 +175,27 @@ p {
     padding: 16px 16px 0 16px;
 }
 
+.scroller {
+    overflow: auto;
+}
+
 .nav {
     display: flex;
-    height: 24px;
+    border-bottom: 1px solid var(--color-cloud);
+    box-sizing: border-box;
+    display: flex;
+    height: 32px;
     margin-bottom: 16px;
+    
 }
 
 .nav__item {
+    box-sizing: border-box;
     color: var(--color-cloud);
     font-weight: 500;
+    height: 32px;
     margin-right: 16px;
+    white-space: nowrap;
 }
 
 .nav__item:hover {
@@ -193,6 +204,7 @@ p {
 }
 
 .nav__item_active {
+    border-bottom: 2px solid var(--color-sky);
     color: var(--color-sky);
     cursor: auto;
 }
