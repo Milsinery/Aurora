@@ -1,4 +1,5 @@
 /* Global variable */
+
 :root {
     /* Colors */
     --color-snow: white;
@@ -10,6 +11,7 @@
 
 
 /* Base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -58,12 +60,35 @@ p {
     line-height: 20px;
 }
 
+
 /* Components */
+
 .icon {
-    background-color: var(--color-snow);
-    border-radius: 50%;
+    box-sizing: border-box;
     height: 32px;
     width: 32px;
+    padding: 6px;
+    fill: var(--color-snow);
+}
+
+.icon_pencil {
+    fill: white;
+    content: url(/files/pencil.svg);
+}
+
+.icon_search {
+    fill: white;
+    content: url(/files/search.svg);
+}
+
+.icon_share {
+    fill: white;
+    content: url(/files/share.svg);
+}
+
+.icon_download {
+    fill: white;
+    content: url(/files/download.svg);
 }
 
 .header {
@@ -145,24 +170,31 @@ p {
 }
 
 .menu__item:hover {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgb(255, 255, 255);
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
+    color: var(--color-graphite);
     transition: all .15s ease-in;
 }
 
+.menu__item:hover .menu__title {
+    color: var(--color-graphite);
+    transition: all .15s ease-in;
+}
+
+.menu__item:hover .icon {
+    fill: var(--color-graphite);
+}
+
 .menu__item_active {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgb(255, 255, 255);
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
     cursor: auto;
 }
 
-.icon {
-    border-radius: 50%;
-    flex-shrink: 0;
-    height: 32px;
-    width: 32px;
+.menu__item_active .menu__title {
+    color: var(--color-graphite);
 }
 
 .menu__icon {
@@ -198,7 +230,6 @@ p {
     display: flex;
     height: 32px;
     margin-bottom: 16px;
-    
 }
 
 .nav__item {
@@ -262,26 +293,21 @@ p {
 }
 
 @media (max-width:480px) {
-
     .menu {
         display: none;
     }
-
     .menu_mobile {
         bottom: 0;
         transition: all .15s ease-in;
         visibility: visible;
     }
-
     .content {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
-
     .table {
         overflow: auto;
     }
-
 }
 
 .table {
