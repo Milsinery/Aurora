@@ -376,41 +376,52 @@ p {
     overflow: auto;
     position: sticky;
     position: -webkit-sticky;
-    align-items: center;
-    padding: 8px 8px 0 0;
+    padding: 8px 8px 8px 4px;
 }
 
-.pagination__page {
-    background: var(--color-snow);
-    border: 1px solid var(--color-cloud);
+.pagination__pad {
+    border: 1px solid var(--color-water);
     border-right: none;
     box-sizing: border-box;
-    color: #878787;
     flex-shrink: 0;
-    font-size: 12px;
-    font-weight: 400;
     height: 32px;
-    text-align: center;
     width: 32px;
 }
 
-.pagination__page:hover {
+.pagination__pad:hover {
+    border-color: var(--color-water);
     background-color: var(--color-water);
     cursor: pointer;
 }
 
-.pagination__page:first-child {
+.pagination__pad:hover .pagination__title {
+    color: var(--color-snow);
+}
+
+.pagination__pad:first-child {
     border-radius: 2px 0 0 2px;
 }
 
-.pagination__page:last-child {
+.pagination__pad:last-child {
     border-right: 1px solid var(--color-cloud);
     border-radius: 0 2px 2px 0;
 }
 
-.pagination__page_active {
+.pagination__pad_active {
+    border-color: var(--color-water);
     background-color: var(--color-water);
-    background-color: var(--color-water);
+}
+
+.pagination__pad_active .pagination__title {
+    color: var(--color-snow);
+}
+
+.pagination__title {
+    align-items: center;
+    color: var(--color-sky);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .bg {
