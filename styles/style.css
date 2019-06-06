@@ -1,6 +1,6 @@
 /* Global variable */
 
- :root {
+:root {
     /* Colors */
     --color-snow: white;
     --color-graphite: #474747;
@@ -63,32 +63,11 @@ p {
 
 /* Components */
 
-.icon {
+.icon path{
     box-sizing: border-box;
     height: 32px;
     width: 32px;
-    padding: 6px;
     fill: var(--color-snow);
-}
-
-.icon_pencil {
-    fill: white;
-    content: url(/files/pencil.svg);
-}
-
-.icon_search {
-    fill: white;
-    content: url(/files/search.svg);
-}
-
-.icon_share {
-    fill: white;
-    content: url(/files/share.svg);
-}
-
-.icon_download {
-    fill: white;
-    content: url(/files/download.svg);
 }
 
 .header {
@@ -104,7 +83,7 @@ p {
 }
 
 .logotype {
-    content: url(/files/logo-windows.svg);
+    fill: var(--color-white);
 }
 
 .header__logotype {
