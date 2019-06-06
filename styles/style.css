@@ -23,8 +23,6 @@ html {
 }
 
 body {
-    background-color: rgb(68, 68, 139);
-    color: var(--color-graphite);
     display: flex;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -63,10 +61,11 @@ p {
 
 /* Components */
 
-.icon path{
+.icon path {
     box-sizing: border-box;
     height: 32px;
     width: 32px;
+    padding: 8px;
     fill: var(--color-snow);
 }
 
@@ -82,8 +81,8 @@ p {
     width: 100%;
 }
 
-.logotype {
-    fill: var(--color-white);
+.logotype path {
+    fill: var(--color-snow);
 }
 
 .header__logotype {
@@ -108,7 +107,7 @@ p {
 
 .menu {
     align-items: flex-start;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
     border-top-left-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-right: none;
@@ -164,8 +163,9 @@ p {
     transition: all .15s ease-in;
 }
 
-.menu__item:hover .icon {
+.menu__item:hover .icon path {
     fill: var(--color-graphite);
+    transition: all .15s ease-in;
 }
 
 .menu__item_active {
@@ -173,6 +173,10 @@ p {
     border-bottom-left-radius: 16px;
     border-top-left-radius: 16px;
     cursor: auto;
+}
+
+.menu__item_active .icon path {
+    fill: var(--color-graphite);
 }
 
 .menu__item_active .menu__title {
@@ -195,6 +199,7 @@ p {
 .content {
     background-color: var(--color-snow);
     box-sizing: border-box;
+    color: var(--color-graphite);
     flex-grow: 1;
     height: 100%;
     overflow: auto;
