@@ -239,17 +239,17 @@ p {
     height: 32px;
     margin-right: 16px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .nav__item:hover {
     color: var(--color-sky);
-    cursor: pointer;
 }
 
 .nav__item_active {
     border-bottom: 2px solid var(--color-sky);
     color: var(--color-sky);
-    cursor: auto;
+    cursor: default;
 }
 
 .text-feed {
@@ -325,6 +325,10 @@ p {
     border-bottom: 1px solid #cccccc;
     display: flex;
     flex-direction: row;
+}
+
+.table__row:last-child {
+    border-bottom: none;
 }
 
 .table__row:hover {
