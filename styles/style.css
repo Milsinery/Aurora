@@ -61,11 +61,12 @@ p {
 
 /* Components */
 
-.icon path {
-    box-sizing: border-box;
-    height: 32px;
+.icon {
     width: 32px;
-    padding: 8px;
+    height: 32px;
+}
+
+.icon path {
     fill: var(--color-snow);
 }
 
@@ -146,7 +147,7 @@ p {
     flex-shrink: 0;
     justify-items: flex-start;
     margin-bottom: 16px;
-    transition: background-color .15s ease-in;
+    transition: all .15s ease-in;
     width: 100%;
 }
 
