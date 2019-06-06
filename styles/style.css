@@ -1,6 +1,6 @@
 /* Global variable */
 
-:root {
+ :root {
     /* Colors */
     --color-snow: white;
     --color-graphite: #474747;
@@ -372,12 +372,14 @@ p {
     overflow: auto;
     position: sticky;
     position: -webkit-sticky;
+    align-items: center;
     padding: 8px 8px 0 0;
 }
 
 .pagination__page {
     background: var(--color-snow);
-    border: 1px solid #cccccc;
+    border: 1px solid var(--color-cloud);
+    border-right: none;
     box-sizing: border-box;
     color: #878787;
     flex-shrink: 0;
@@ -398,9 +400,22 @@ p {
 }
 
 .pagination__page:last-child {
+    border-right: 1px solid var(--color-cloud);
     border-radius: 0 2px 2px 0;
 }
 
 .pagination__page_active {
     background-color: var(--color-water);
+    background-color: var(--color-water);
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url(/files/bg-big.jpg) no-repeat center;
+    background-size: cover;
 }
