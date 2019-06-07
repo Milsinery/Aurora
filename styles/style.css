@@ -207,6 +207,10 @@ p {
     padding: 16px 16px 0 16px;
 }
 
+.content::-webkit-scrollbar {
+    opacity: 100;
+}
+
 .scroller {
     overflow: auto;
 }
@@ -274,11 +278,18 @@ p {
     width: 320px;
 }
 
+.sidebar::-webkit-scrollbar {
+    opacity: 100;
+}
+
 @media (max-width: 1024px) {
     .sidebar {
         display: none;
     }
 }
+
+
+/* Mobile */
 
 @media (max-width:480px) {
     .menu {
@@ -296,6 +307,10 @@ p {
     .table {
         overflow: auto;
     }
+
+    .pagination {
+
+    }
 }
 
 .table {
@@ -307,6 +322,7 @@ p {
     display: flex;
     flex-direction: column;
     overflow: auto;
+    margin-bottom: 8px;
 }
 
 .table__row {
@@ -353,14 +369,11 @@ p {
 .pagination {
     background-color: var(--color-snow);
     bottom: 0;
-    box-sizing: border-box;
-    flex-direction: row;
     display: flex;
+    box-sizing: border-box;
     height: 48px;
     left: 0;
-    justify-items: flex-start;
-    margin-bottom: 24px;
-    margin-top: 8px;
+    margin-bottom: 16px;
     overflow: auto;
     position: sticky;
     position: -webkit-sticky;
@@ -368,10 +381,13 @@ p {
 }
 
 .pagination__pad {
+    align-items: center;
     border: 1px solid var(--color-water);
     border-right: none;
     box-sizing: border-box;
+    display: flex;
     flex-shrink: 0;
+    justify-content: center;
     height: 32px;
     width: 32px;
 }
