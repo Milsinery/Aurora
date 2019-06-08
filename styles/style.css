@@ -310,15 +310,17 @@ p {
     .table {
         overflow: auto;
     }
-
-    .pagination {
-
-    }
 }
 
 .table {
     display: flex;
     flex-direction: column;
+}
+
+.table_head {
+    overflow: auto;
+    display: flex;
+    background-color: var(--color-snow);
 }
 
 .rows {
