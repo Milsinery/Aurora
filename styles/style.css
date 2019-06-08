@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: var(--color-graphite);
 }
 
 html {
@@ -208,7 +209,6 @@ p {
 .content {
     background-color: var(--color-snow);
     box-sizing: border-box;
-    color: var(--color-graphite);
     flex-grow: 1;
     height: 100%;
     overflow: auto;
@@ -225,7 +225,7 @@ p {
 
 .nav {
     display: flex;
-    border-bottom: 1px solid var(--color-cloud);
+    border-bottom: 1px solid var(--color-water);
     box-sizing: border-box;
     display: flex;
     height: 32px;
@@ -277,7 +277,7 @@ p {
 
 .sidebar {
     background-color: var(--color-snow);
-    border-left: 1px solid var(--color-cloud);
+    border-left: 1px solid var(--color-water);
     border-top-right-radius: 8px;
     flex-shrink: 0;
     height: 100%;
