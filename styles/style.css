@@ -144,6 +144,7 @@ p {
 }
 
 .menu__item {
+    position: relative;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 16px;
@@ -155,13 +156,17 @@ p {
     margin-bottom: 16px;
     transition: all .15s ease-in;
     width: 100%;
-    transition: all .15s ease-in;
+}
+
+.menu__item_active::before {
+    content: url(/files/pad_element.svg);
+    position: absolute;
+    right: 0;
+    top: -8px;
 }
 
 .menu__item:hover {
-    background-color: rgb(255, 255, 255);
-    border-bottom-left-radius: 16px;
-    border-top-left-radius: 16px;
+    background-color: var(--color-snow);
     color: var(--color-graphite);
     transition: all .15s ease-in;
 }
@@ -311,6 +316,9 @@ p {
         overflow: auto;
     }
 }
+
+
+/* TODO: Переделать таблицу с флексов в гридс */
 
 .table {
     display: flex;
