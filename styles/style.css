@@ -155,7 +155,6 @@ p {
     flex-shrink: 0;
     justify-items: flex-start;
     margin-bottom: 16px;
-    transition: all .15s ease-in;
     width: 100%;
 }
 
@@ -166,20 +165,24 @@ p {
     top: -8px;
 }
 
+.menu__item:hover::before {
+    content: url(/files/pad_element.svg);
+    position: absolute;
+    right: 0;
+    top: -8px;
+}
+
 .menu__item:hover {
     background-color: var(--color-snow);
     color: var(--color-graphite);
-    transition: all .15s ease-in;
 }
 
 .menu__item:hover .menu__title {
     color: var(--color-sky);
-    transition: all .15s ease-in;
 }
 
 .menu__item:hover .icon path {
     fill: var(--color-sky);
-    transition: all .15s ease-in;
 }
 
 .menu__item_active {
